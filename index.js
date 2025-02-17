@@ -2,7 +2,7 @@
 
 //Exercício 1: Arrow Function com um parâmetro
 
-const dobro = (x) => x*2; 
+const dobro = (x) => x * 2; 
 console.log(dobro(6));
 
 //Exercício 2: Arrow Function com múltiplos parâmetros
@@ -32,12 +32,12 @@ console.log(precosComDesconto);
 //Exercício 6: filter() – Filtrando valores em um array
 
 const idades = [12, 25, 17, 30, 14, 19];
-const menoresDeIdade = idades.filter(idade => idade <= 18);
+const menoresDeIdade = idades.filter(idade => idade < 18);
 console.log(menoresDeIdade); 
 
 //Exercício 7: reduce() – Somando valores de um array
 
 const numeros = [2, 3, 4, 5];
-const produto = numeros.reduce((total, num) => num * total);
+const produto = numeros.reduce((total, num) => total * num, 1);
 console.log(produto); 
 
